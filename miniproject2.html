@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <script src="./lib/d3.js"></script>
+         <!--parallax_script source:https://pixelcog.github.io/parallax.js/ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>   
+        <script src="./parallax.min.js"></script>
+       
+    </head>
+    <body>
+
+        <div class ="container">
+        <div id="title">
+            Total Refugee Arrivals To U.S. From Asia Between Fiscal Year 2009 And 2018
+        </div>
+        
+        <!--RegionButtons-->
+        <div id="chart">
+            <input type="button" value="Asia" id="Asia" class="RegionButton">
+            <input type="button" value="Africa" id="Africa" class="RegionButton">
+            <input type="button" value="Europe" id="Europe" class="RegionButton">
+            <input type="button" value="North America" id="NorthAmerica" class="RegionButton">
+            <input type="button" value="South America" id="SouthAmerica" class="RegionButton">
+        </div>
+
+        <!--Dropup menu-->
+        <div class="dropup">
+            <button class="dropbtn">Data Type</button>
+            <div class="dropup-content">  
+                <input type="button" value="gross" id="gross">
+                <input type="button" value="perCapita" id="perCapita">
+            </div>
+        </div>
+
+        <!--source
+        <button class="sourcebutton"id="source" href="https://www.dhs.gov/immigration-statistics/refugees-asylees">
+            Source: U.S. Department of State
+        </button>
+        -->
+         <!--source-->
+        <a id="source" href="https://www.dhs.gov/immigration-statistics/refugees-asylees">
+            <img src="./img/HS.png" width="500" alt="Photo of HomelandSecurity">
+        </a>
+        <a id = "source2" href="https://www.worldometers.info/population/world/">
+            <img src="./img/WM.png" width="500" alt="Photo of worldometers">
+        </a>
+
+        <!--parallax effect-->
+        <div class ="container">
+            <div class="parallax" data-parallax="scroll" 
+            data-z-index="1" data-image-src="./img/us.jpeg"></div>
+        </div>
+
+        <div class ="container" id = "intro">
+            As the refugee crisis progressed, the Obama administration raised the cap for maximum refugee annual intake. 
+            However, when the Trump administration took over, the US’s refugee arrival number plummeted. 
+        </div>
+        <div class ="container" id = "intro">
+            Refugee arrivals in the United States declined by 48% since Trump took over office.
+            The above bar chart shows how the refugee intake by region changes from 2009 to 2018.
+
+            Click the button on your right to see the refugee arrivals per capita. 
+        </div>
+         <!---->
+        <div class ="container" id = "intro">
+        <p> Population source from WORLDOMETER.com </p> 
+        <p> Refugee arrivals source from U.S. Department of Home Land Security</p>
+        </div>
+        
+        <!---->
+        <div>
+            <script src="./script.js"></script>
+        </div>
+        
+    </body>
+</html>
